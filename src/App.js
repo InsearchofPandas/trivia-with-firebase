@@ -35,7 +35,7 @@ function App() {
             Made by Kyle Humphrey
           </a>
           <a
-            href="https://github.com/InsearchofPandas/studio-ghibli"
+            href="https://github.com/InsearchofPandas/trivia-with-firebase"
             target="_blank"
             rel="noopener noreferrer"
             className="footerText"

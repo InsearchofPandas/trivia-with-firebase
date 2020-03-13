@@ -28,7 +28,7 @@ export default function Settings({
     handleDifficultyState(value);
   }
 
-  // handle closing menus for outside clicks
+  // handle closing menu for outside clicks
 
   const handleClick = e => {
     if (node.current.contains(e.target)) {
