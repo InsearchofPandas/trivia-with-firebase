@@ -43,6 +43,14 @@ function App() {
             View Code on GitHub
           </a>
           <a
+            href="https://opentdb.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footerText"
+          >
+            Questions Provided by Open Trivia DB
+          </a>
+          <a
             href="https://www.leveluptutorials.com/tutorials/fullstack-react-and-firebase"
             target="_blank"
             rel="noopener noreferrer"

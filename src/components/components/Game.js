@@ -29,7 +29,7 @@ export default function Game({ history }) {
   }, [amount, difficulty, category]);
 
   const scoreSaved = () => {
-    history.push("/");
+    history.push("/highScores");
   };
 
   const changeQuestion = useCallback(

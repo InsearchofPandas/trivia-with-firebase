@@ -49,7 +49,9 @@ export default function Settings({
       <div className="settings-choice-container ">
         <h3 className="settings-choice-prefix">Questions:</h3>
         <div className="settings-choice-text">
-          <p onClick={() => setDropDown(0)}>{amount}</p>
+          <p className="drop-menu" onClick={() => setDropDown(0)}>
+            {amount}
+          </p>
           <ul className={dropDown === 0 ? "" : "noDropDown"}>
             <li onClick={() => handleAmount(5)}>5</li>
             <li onClick={() => handleAmount(10)}>10</li>
@@ -62,7 +64,9 @@ export default function Settings({
       <div className="settings-choice-container ">
         <h3 className="settings-choice-prefix">Category:</h3>
         <div className="settings-choice-text ">
-          <p onClick={() => setDropDown(1)}>{category.name}</p>
+          <p className="drop-menu" onClick={() => setDropDown(1)}>
+            {category.name}
+          </p>
           <ul className={dropDown === 1 ? "" : "noDropDown"}>
             {categories.trivia_categories.map(category => (
               <li onClick={() => handleCategory(category)} key={category.id}>
@@ -75,7 +79,9 @@ export default function Settings({
       <div className="settings-choice-container ">
         <h3 className="settings-choice-prefix">Difficulty:</h3>
         <div className="settings-choice-text">
-          <p onClick={() => setDropDown(2)}>{difficulty}</p>
+          <p className="drop-menu" onClick={() => setDropDown(2)}>
+            {difficulty}
+          </p>
           <ul className={dropDown === 2 ? "" : "noDropDown"}>
             <li onClick={() => handleDifficulty("Easy")}>Easy</li>
             <li onClick={() => handleDifficulty("Medium")}>Medium</li>

@@ -51,6 +51,14 @@ li:hover {
 
 /* Drop Menu */
 
+.drop-menu {
+  color: black;
+}
+
+.drop-menu:hover {
+  color: #56a5eb;
+}
+
 .noDropDown {
   display: none;
 }
@@ -160,6 +168,10 @@ input::placeholder {
   width: 100%;
   background-color: white;
   position: relative;
+}
+
+.settings-choice-text:hover {
+  background-color: #c0d9f0;
 }
 
 /* GAME/QUESTION */
@@ -286,6 +298,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .footerText {
@@ -296,6 +309,10 @@ input::placeholder {
   padding-bottom: 0.2rem;
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+.footerText:hover {
+  color: #56a5eb;
 }
 
 .return {
