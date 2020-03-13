@@ -1,0 +1,17 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function Home() {
+  return (
+    <>
+      <h1>Quiz App</h1>
+
+      <Link style={{ marginTop: 25 }} to="/game" className="btn">
+        Start Game
+      </Link>
+      <Link to="/highScores" className="btn">
+        High Scores
+      </Link>
+    </>
+  );
+}
