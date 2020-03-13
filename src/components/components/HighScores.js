@@ -38,11 +38,20 @@ export default function HighScores() {
         <>
           <h1>High Scores</h1>
           <div style={{ marginTop: 33 }} id="highScoresList">
-            {scores.map(record => (
-              <li key={record.key} className="high-score">
-                Player: <span className="readabillity">{record.name}</span>{" "}
-                Score: <span className="readabillity">{record.score}</span>
-              </li>
+            {scores.map((record, i) => (
+              <div
+                style={{
+                  display: "flex",
+                  backgroundColor: i % 2 === 0 ? "white" : "#ECF5FF"
+                }}
+              >
+                <p key={record.key} className="high-score">
+                  Player: <span className="readabillity">{record.name}</span>{" "}
+                </p>
+                <p className="high-score">
+                  Score: <span className="readabillity">{record.score}</span>
+                </p>
+              </div>
             ))}
           </div>
           <Link to="/" className="btn">

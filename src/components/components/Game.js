@@ -12,7 +12,7 @@ export default function Game({ history }) {
   const [score, setScore] = useState(0);
   const [questionNumber, setQuestionNumber] = useState(0);
   const [done, setDone] = useState(false);
-  const [amount, setAmount] = useState(10);
+  const [amount, setAmount] = useState(5);
   const [difficulty, setDifficulty] = useState("Easy");
   const [category, setCategory] = useState({ id: 9, name: "All" });
   const [responseCode, setResponseCode] = useState(null);
@@ -104,6 +104,7 @@ export default function Game({ history }) {
           <Question
             question={currentQuestion}
             changeQuestion={changeQuestion}
+            amount={amount}
           />
         </>
       )}

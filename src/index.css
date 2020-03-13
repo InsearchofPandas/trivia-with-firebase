@@ -266,20 +266,22 @@ input::placeholder {
   list-style: none;
   padding-left: 0;
   margin-bottom: 4rem;
+  text-align: left;
+  background-color: white;
+  padding: 40px;
 }
 
 .high-score {
   font-size: 2.8rem;
-  margin-bottom: 0.5rem;
+  padding-left: 5rem;
+  padding: 0.75rem;
+  width: 500px;
+  border-bottom: 0.1rem solid rgb(86, 165, 235, 0.25);
 }
 
 .readabillity {
   color: #56a5eb;
   padding-left: 10px;
-}
-
-.readabillity:hover {
-  color: pink;
 }
 
 /* Footer */

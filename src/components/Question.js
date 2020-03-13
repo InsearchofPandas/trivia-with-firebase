@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Question({ question, changeQuestion }) {
+export default function Question({ question, changeQuestion, amount }) {
   const [classToApply, setClassToApply] = useState("");
   const [selectedAnswer, setSelectedAnswer] = useState(-1);
   const [answering, setAnswering] = useState(false);
@@ -13,7 +13,7 @@ export default function Question({ question, changeQuestion }) {
     const classToApply =
       question.answer === selectedAnswer ? "correct" : "incorrect";
     setClassToApply(classToApply);
-    const bonus = selectedAnswer === question.answer ? 10 : 0;
+    const bonus = selectedAnswer === question.answer ? 100 / amount : 0;
 
     setTimeout(() => {
       setSelectedAnswer(-1);
